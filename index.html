@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" media="screen, print" type="text/css" href="index.css" />
+        <title>Framework CSS</title>
+    </head>
+    <body>
+        <header>
+            <h1>Test Grid</h1>
+
+            <!--NAVBAR-->
+            <h3>NAVBAR</h3>
+            <nav class="navbar navbar-dark bg-primary">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button">
+                    <div class="navbar-toggler-icon-bar"></div>
+                    <div class="navbar-toggler-icon-bar"></div>
+                    <div class="navbar-toggler-icon-bar"></div>
+                </button>
+              
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">
+                            Dropdown <i class="arrow"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline">
+                        <input class="form-control" type="search" placeholder="Search">
+                        <button class="btn" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+
+        <!--TABS-->
+        <h3>TABS</h3>
+        <div class="tab-container">
+            <div class="tab-body">
+                <ul class="tab-list">
+                    <li class="tab-link" data-target="#tab1">Tab 1</li>
+                    <li class="tab-link" data-target="#tab2">Tab 2</li>
+                    <li class="tab-link" data-target="#tab3">Tab 3</li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane" id="tab1">
+                    <p>First tab</p>
+                    <p>Hello
+                    </p>
+                </div>
+                <div class="tab-pane" id="tab2">
+                    <p>Second tab</p>
+                    <p>How are
+                    </p>
+                </div>
+                <div class="tab-pane" id="tab3">
+                    <p>Third tab</p>
+                    <p>You ?
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col col--xs-12  col--sm-4 col--md-8 col--lg-2">
+                    xs-12 / sm-4 / md-8 / lg-2
+                </div>
+                <div class="col col--xs-6 col--sm-8 col--md-4 col--lg-10">
+                    xs-6 / sm-8 / md-4 / lg-10
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col col--xs-6  col--sm-5 col--md-4 col--lg-4">
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-secondary disabled">Secondary</button>
+                    <button class="btn btn-danger active" aria-pressed="true"><a href="#">Primary link</a></button>
+                </div>
+                <div class="col col--xs-6 col--sm-5 col--md-4 col--lg-4">
+                    Colonne 2
+                </div>
+                <div class="col col--xs-12 col--sm-2 col--md-4 col--lg-12">
+                    <nav class="navbar navbar-light bg-warning">
+                        <a class="navbar-brand" href="#">Navbar</a>
+                        <button class="navbar-toggler" type="button">
+                            <div class="navbar-toggler-icon-bar"></div>
+                            <div class="navbar-toggler-icon-bar"></div>
+                            <div class="navbar-toggler-icon-bar"></div>
+                        </button>
+                      
+                        <div class="collapse navbar-collapse">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                <a class="nav-link" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#">
+                                    Dropdown <i class="arrow"></i>
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Disabled</a>
+                                </li>
+                            </ul>
+                            <form class="form-inline">
+                                <input class="form-control" type="search" placeholder="Search">
+                                <button class="btn" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+              <div class="col col--xs-12 col--sm-5 col--md-4 col--lg-3">
+                <img class="img-responsive img-blur" src="assets/geometry.jpg">
+              </div>
+              <div class="col col--xs-12 col--sm-5 col--md-4 col--lg-3">
+                <img class="img-responsive img-rounded" src="assets/geometry.jpg">
+              </div>
+              <div class="col col--xs-12 col--sm-5 col--md-4 col--lg-3">
+                <img class="img-responsive img-circle" src="assets/geometry.jpg">
+              </div>
+              <div class="col col--xs-12 col--sm-5 col--md-4 col--lg-3">
+                <img class="img-responsive img-thumbail" src="assets/geometry.jpg">
+              </div>
+          </div>
+        </div>
+
+        <!--BUTTONS-->
+        <h3>BUTTONS</h3>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-link">Link</button>
+
+        <!--TEXT-->
+        <h3>TEXT</h3>
+        <p><a href="#" class="text-primary hidden-print">.text-primary</a></p>
+        <p class="text-secondary">.text-secondary</p>
+        <p class="text-success">.text-success</p>
+        <p class="text-danger">.text-danger</p>
+        <p class="text-warning">.text-warning</p>
+        <p class="text-info">.text-info</p>
+        <p class="text-light bg-dark">.text-light</p>
+        <p class="text-dark">.text-dark</p>
+        <p class="text-muted">.text-muted</p>
+        <p class="text-white bg-dark">.text-white</p>
+        <p class="text-error">.text-error</p>
+
+        <!--BACKGROUND-->
+        <h3>BACKGROUND</h3>
+        <div class="bg-primary text-white">.bg-primary</div>
+        <div class="bg-secondary text-white">.bg-secondary</div>
+        <div class="bg-success text-white">.bg-success</div>
+        <div class="bg-danger text-white">.bg-danger</div>
+        <div class="bg-warning text-dark">.bg-warning</div>
+        <div class="bg-info text-white">.bg-info</div>
+        <div class="bg-light text-dark">.bg-light</div>
+        <div class="bg-dark text-white">.bg-dark</div>
+        <div class="bg-white text-dark">.bg-white</div>
+        <div class="bg-error text-dark">.bg-error</div>
+
+        <!--ALERTS-->
+        <h3>ALERTS</h3>
+        <div class="alert alert-primary" role="alert">
+            This is a primary alert—check it out!
+        </div>
+        <div class="alert alert-secondary" role="alert">
+            This is a secondary alert—check it out!
+        </div>
+        <div class="alert alert-success" role="alert">
+            This is a success alert—check it out!
+        </div>
+        <div class="alert alert-danger" role="alert">
+            This is a danger alert—check it out!
+        </div>
+        <div class="alert alert-warning" role="alert">
+            This is a warning alert—check it out!
+        </div>
+        <div class="alert alert-info" role="alert">
+            This is a info alert—check it out!
+        </div>
+        <div class="alert alert-light" role="alert">
+            This is a light alert—check it out!
+        </div>
+        <div class="alert alert-dark" role="alert">
+            This is a dark alert—check it out!
+        </div>
+
+        <!--MODAL-->
+        <h3>MODAL</h3>
+        <button type="button" id=button-modal class="btn btn-primary" data-target="#myModal">
+            Launch demo modal
+        </button>
+ 
+        <div class="modal" id="myModal" tabindex="-1">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Modal title</h3>
+                </div>
+                <div class="modal-body">
+                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, 
+                    egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                    Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus 
+                    vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+                    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque 
+                    nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col col--xs-12  col--sm-3 col--md-8 col--lg-2">
+                                xs-12 / sm-4 / md-8 / lg-2
+                            </div>
+                            <div class="col col--xs-6 col--sm-9 col--md-4 col--lg-10">
+                                <img src="assets/champignon(2).png">
+                                <button type="button" class="btn btn-info">Info</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary popin-dismiss">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <!--TOOLTIPS-->
+        <h3>TOOLTIPS</h3>
+        <button type="button" class="btn btn-warning tooltip" title="Infobulle Warning" data-placement="right">Warning</button>
+        <button type="button" class="btn btn-danger tooltip" title="Infobulle Danger" data-placement="left">Danger</button>
+        <button type="button" class="btn btn-success tooltip" title="Infobulle Success" data-placement="top">Success</button>
+        <button type="button" class="btn btn-info tooltip" title="Infobulle Info" data-placement="bottom">Info</button>
+        <button type="button" class="btn btn-dark tooltip">Info</button>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
